@@ -1,0 +1,17 @@
+---
+kind: pipeline
+type: docker
+name: test-drone
+
+steps:
+- name: build
+  image: ubuntu
+  commands:
+  - echo start
+  - echo building
+
+- name: test
+  image: ubuntu
+  commands:
+  - echo start
+  - echo testing
