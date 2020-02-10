@@ -5,10 +5,9 @@ name: test-drone
 
 steps:
 - name: build
-  image: ubuntu
+  image: gcc
   commands:
-  - echo start
-  - echo building
+  - gcc -o test-drone test-drone.c
 
 - name: test
   image: ubuntu
